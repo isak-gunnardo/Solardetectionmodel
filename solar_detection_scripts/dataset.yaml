@@ -1,0 +1,21 @@
+# YOLOv8 Dataset Configuration
+# Sveriges mest kompletta solcellsdataset - 1161 annotationer från 40+ städer
+
+# Dataset info
+path: .  # dataset root dir (relative to this file)
+train: downloaded_orthophotos  # train images (relative to 'path')
+val: downloaded_orthophotos    # val images (relative to 'path') 
+
+# Classes
+names:
+  0: solcell
+
+# Dataset metadata
+dataset_name: "Swedish Solar Panel Detection - Mega Dataset"
+description: "1161 annotations from 40+ Swedish cities (2017-2024)"
+cities: "Malmö, Stockholm, Jönköping, Västerås, Uppsala, Linköping, Helsingborg + 33 more"
+geographic_coverage: "Luleå to Malmö - Complete Sweden"
+annotation_sources: 
+  - "Current project: 622 annotations (7 cities)"
+  - "Demo project: 539 YOLO annotations (36 cities)"
+expected_performance: "45-55% mAP50 (Research level)"
